@@ -301,6 +301,16 @@
     }
   }
 </style>
+<app-header></app-header>
+<br>
+
+<br>
+<div class="container">
+  <app-login></app-login>
+</div>
+<!-- <div class="container">
+  <app-list></app-list>
+</div> -->
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
@@ -326,7 +336,29 @@
 </div>
 
 <div class="content" role="main">
+<div class="card-container mt-5 mb-5">
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Default file input example</label>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+  <div class="mb-3">
+    <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+    <input class="form-control" type="file" id="formFileMultiple" multiple>
+  </div>
+  <div class="mb-3">
+    <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+    <input class="form-control" type="file" id="formFileDisabled" disabled>
+  </div>
+  <div class="mb-3">
+    <label for="formFileSm" class="form-label">Small file input example</label>
+    <input class="form-control form-control-sm" id="formFileSm" type="file">
+  </div>
+  <div>
+    <label for="formFileLg" class="form-label">Large file input example</label>
+    <input class="form-control form-control-lg" id="formFileLg" type="file">
+  </div>
 
+</div>
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
@@ -423,6 +455,9 @@
       <span>Build for Production</span>
     </button>
   </div>
+  <div class="container">
+    <app-list></app-list>
+  </div>
 
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
@@ -435,6 +470,7 @@
   </div>
 
   <!-- Links -->
+  <h1 class="bg-primary">hello every one</h1>
   <div class="card-container">
     <a class="circle-link" title="Find a Local Meetup" href="https://www.meetup.com/find/?keywords=angular" target="_blank" rel="noopener">
       <svg xmlns="http://www.w3.org/2000/svg" width="24.607" height="23.447" viewBox="0 0 24.607 23.447">
@@ -472,6 +508,7 @@
   </svg>
 
 </div>
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
