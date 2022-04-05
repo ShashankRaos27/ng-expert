@@ -1,0 +1,8 @@
+<p>job-list-parent works!</p>
+<h2>{{recv | json}}</h2>
+<app-job-child 
+[companyName]="comname";
+[area]="city";
+[pincode]="code"
+
+(sending)="data_recv($event)"></app-job-child>
